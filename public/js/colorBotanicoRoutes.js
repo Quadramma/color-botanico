@@ -43,6 +43,7 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 		views: {
 			'': {
 				templateUrl: 'views/gallery.html',
+				controller: 'galleryCtrl'
 			}
 		}
 	});

@@ -39,7 +39,7 @@ app.controller("homeCtrl", function(
 		googleTranslateElementInit($timeout);
 	});
 	$timeout(function() {
-		$('.carousel').carousel({
+		$('#myCarousel').carousel({
 			interval: 5000
 		});
 	});
@@ -86,5 +86,22 @@ app.controller("contactCtrl", function(
 
 
 
+	});
+});
+
+
+app.controller("galleryCtrl", function(
+
+	$scope, $state, $rootScope, $api
+
+	, focus, select, $timeout) {
+	console.info("galleryCtrl");
+	$timeout(function() {
+		googleTranslateElementInit($timeout);
+	});
+	$timeout(function() {
+		$('#galleryCarousel').carousel({
+			interval: 5000
+		});
 	});
 });
