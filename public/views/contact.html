@@ -1,5 +1,103 @@
 <div class="contact">
-
-CONTACT
-	
+	<div class="container-fluid contactBackground">
+		<div class="row-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-5">
+						<div class="thumbnail form-container">
+							<div class="page-header center-block">
+								<h1>Buenos Aires te esta esperando</h1>
+							</div>
+							
+							<form>
+								
+								<div class="form-group required">
+									<label for="fullname">Nombre y Apellido</label>
+									<input ng-model="form.nombreyapellido" type="text" class="form-control" id="fullname" placeholder="Nombre y apellido">
+								</div>
+								<div class="form-group required">
+									<label for="email">E-Mail</label>
+									<input ng-model="form.email" type="email" class="form-control" id="email" placeholder="E-mail">
+								</div>
+								<div class="form-group required">
+									<label for="phone">Telefono</label>
+									<input ng-model="form.telefono" type="number" class="form-control" id="phone" placeholder="Telefono">
+								</div>
+								
+								<div class="form-group">
+									<label for="select-country">Pais:</label>
+									<div
+										ng-include
+										src="'views/partial.selectCountry.html'"
+										onload="initCountrySelect()"
+									></div>
+								</div>
+								
+								<div class="container">
+									<div class="row">
+										<div class='col-md-2'>
+											<div class="thumbnail center-block">
+												<div class="form-group center-block">
+													<label for="dtpFrom">Fecha de llegada</label>
+													<div class='input-group date' id='dtpFrom'>
+														<input ng-model="form.fechaDesde" type='text' class="form-control" />
+														<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-2'>
+											<div class="thumbnail center-block">
+												<div class="form-group center-block">
+													<label for="dtpFrom">Fecha de salida</label>
+													<div class='input-group date' id='dtpTo'>
+														<input ng-model="form.fechaHasta" type='text' class="form-control" />
+														<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="apartamentType">Tipo de apartamento:</label>
+									<select ng-model="tipoApartamento" id="apartamentType" class="demo-default" placeholder="Seleccione un tipo...">
+										<option value="">Seleccione un tipo...</option>
+										<option value="A">A</option>
+										<option value="B">B</option>
+										<option value="C">C</option>
+									</select>
+								</div>
+								
+								<div class="form-group required">
+									<label for="comment">Comentario adicional</label>
+								</div>
+								<div class="form-group required">
+									
+									<textarea id="comment" ng-model="form.comentario">
+									
+									</textarea>
+								</div>
+								
+								<button ng-click="send()" class="btn btn-primary">Enviar</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

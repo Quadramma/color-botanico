@@ -1,5 +1,5 @@
-var serv = angular.module("myAppApiService", []);
-serv.factory("$ws", ["$resource", '$rootScope',
+var serv = angular.module("qjarvisApi", ['ngResource']);
+serv.factory("$api", ["$resource", '$rootScope',
 	function($resource, $rootScope) {
 		var rta = new(function() {
 

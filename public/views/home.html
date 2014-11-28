@@ -1,35 +1,96 @@
-<div class="home" >
 
-<div class="full-width">
-			<div class="inner">
-				<div class="slide">
-					<div>Lorem ipsum dolor sit amet, consectetur. <br>Curabitur molestie elit et ultricies vehicula.</div>
-					<img src="img/home_slide_1.jpg" width="1020" height="400">
+<div class="home" >
+	
+	<section class="block">
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="active item">
+					<div>
+						
+						<div class="slide-text-container">
+							<h5>COLOR BOTANICO APARTAMENTOS</h5>
+							<h2>Disfruta de vivir<br>
+							en Buenos Aires como<br>
+							en tu casa.</h2>
+							<button ng-click="go('/apartaments')" class="start-btn ">COMIENZA AQUI</button>
+						</div>
+					</div>
+					<img src="img/home_slide_1.jpg" alt="Slide1" />
 				</div>
-				<div class="slide">
-					<div>Nullam dictum magna sapien, sed adipiscing nibh. <br>Curabitur molestie elit et ultricies vehicula.</div>
-					<img src="img/home_slide_2.jpg" width="1020" height="400">
+				
+				<div class=" item">
+					<div>
+						
+						<div class="slide-text-container">
+							<h5>COLOR BOTANICO APARTAMENTOS</h5>
+							<h2>Vivi Buenos Aires<br>justo donde esta sucediendo.</h2>
+							<button ng-click="go('/apartaments')" class="start-btn trans">COMIENZA AQUI</button>
+						</div>
+					</div>
+					<img src="img/home_slide_2.jpg" alt="Slide1" />
 				</div>
-				<div class="slide">
-					<div>Donec malesuada hendrerit velit, sed consequat. <br>Curabitur molestie elit et ultricies vehicula.</div>
-					<img src="img/home_slide_3.jpg" width="1020" height="400">
+				<div class=" item">
+					<div>
+						
+						<div class="slide-text-container white">
+							<h5>APARTAMENTOS PARA ESTUDIANTES</h5>
+							<h2>La vida de Buenos Aires<br> al alcance de tu mano.</h2>
+							<h4>Una estadia confortable, segura y a tu medida<br>
+							 con las opciones culturales, sociales, y turisticas<br>
+							 a pasos de tu casa.</h4>
+							<button ng-click="go('/apartaments')" class="start-btn">COMIENZA AQUI</button>
+						</div>
+					</div>
+					<img src="img/home_slide_student.jpg" alt="Slide1" />
 				</div>
-				<!--
-				<div class="slide">
-					<div>Maecenas augue dui, rhoncus a blandit non. <br>Curabitur molestie elit et ultricies vehicula.</div>
-					<img src="http://lorempixel.com/1020/400/business" width="1020" height="400">
+				<div class=" item">
+					<div>
+						
+						<div class="slide-text-container">
+							<h5>APARTAMENTOS CORPORATIVOS</h5>
+							<h2>Alojamientos ejecutivos<br>en el corazon de Buenos Aires</h2>
+							<h4>Con toda la privacidad, calides y servicio
+							<br>que dia a dia brindamos a nuestros huespedes</h4>
+							<button ng-click="go('/apartaments')" class="start-btn">COMIENZA AQUI</button>
+						</div>
+					</div>
+					<img src="img/home_slide_corporate.jpg" alt="Slide1" />
 				</div>
-				-->
+				
 			</div>
-			<!--
-			<div class="controls">
-				<a href="#" class="left">&lt;</a>
-				<a href="#" class="right">&gt;</a>
-			</div>
-			-->
-			<!--
-			<div class="slide-nav"></div>
-			-->
+			
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="fa fa-angle-left fa-4 arrowSize"></i></a>
+			<a class="carousel-control right " href="#myCarousel" data-slide="next"><i class="fa fa-angle-right fa-4 arrowSize"></i></a>
 		</div>
+	</section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" ng-click="go(APARTAMENTS)">
+					<img src="img/icon_apartamentos.png" alt="...">
+					<div class="caption">
+						<h3>Aparamentos</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" ng-click="go(SERVICES)">
+					<img src="img/icon_servicios.png" alt="...">
+					<div class="caption">
+						<h3>Servicios</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail" ng-click="go(LOCATION)">
+					<img src="img/icon_ubicacion.png" alt="...">
+					<div class="caption">
+						<h3>Ubicacion</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	
 </div>
