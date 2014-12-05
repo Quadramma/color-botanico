@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
 				"modal",
 				"modalFixedArr"
 			],
@@ -68,61 +84,35 @@
 	"buffers":
 	[
 		{
-			"file": "public/index.html",
+			"file": "public/views/apartamentsA.html",
 			"settings":
 			{
-				"buffer_size": 6657,
+				"buffer_size": 8339,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/js/colorBotanicoRoutes.js",
+			"file": "public/views/apartamentsB.html",
 			"settings":
 			{
-				"buffer_size": 2038,
+				"buffer_size": 8351,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/views/contact.html",
+			"file": "public/views/apartamentsC.html",
 			"settings":
 			{
-				"buffer_size": 2350,
+				"buffer_size": 6378,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/js/colorBotanicoCtrls.js",
+			"file": "public/css/cbotanico.css",
 			"settings":
 			{
-				"buffer_size": 1195,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 18 files for \"anchorScroll\" (case sensitive)\n\n/home/javi/git/color-botanico/public/js/colorBotanicoRoutes.js:\n   61  		},\n   62  		onEnter: function() {\n   63: 			app.anchorScroll();\n   64  		}\n   65  	});\n   ..\n   79  		},\n   80  		onEnter: function() {\n   81: 			app.anchorScroll();\n   82  		}\n   83  	});\n   ..\n   97  		},\n   98  		onEnter: function() {\n   99: 			app.anchorScroll();\n  100  		}\n  101  	});\n\n/home/javi/git/color-botanico/public/js/main.js:\n   41  	$scope, $state, $rootScope, $api\n   42  \n   43: 	, focus, select, $timeout, $Lang, $timeout, $anchorScroll, $location) {\n   44  	console.info(\"mainCtrl\");\n   45  \n\n/home/javi/git/color-botanico/public/js/qjarvis.ctrls.js:\n   30  \n   31  	//smooth scrolling to anchor. (uses location.hash)\n   32: 	$rootScope.anchorScroll = function() {\n   33: 		//$anchorScroll();\n   34  		if ($location.hash().toString().length > 0) {\n   35  			console.log($location.hash());\n\n/home/javi/git/color-botanico/public/js/snippets.js:\n   20  \n   21  //SNIPPET//smooth scrolling to anchor. (uses location.hash)-------------------\n   22: app.anchorScroll = function() {\n   23: 	//$anchorScroll();\n   24  	if ($location.hash().toString().length > 0) {\n   25  		console.log($location.hash());\n\n/home/javi/git/color-botanico/public/js/vendor/angular-ui-router.js:\n 3024     *\n 3025     * @description\n 3026:    * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) service for\n 3027     * scrolling based on the url anchor.\n 3028     */\n ....\n 3035     * @name ui.router.state.$uiViewScroll\n 3036     *\n 3037:    * @requires $anchorScroll\n 3038     * @requires $timeout\n 3039     *\n ....\n 3042     * `$timeout` so the DOM has time to refresh).\n 3043     *\n 3044:    * If you prefer to rely on `$anchorScroll` to scroll the view to the anchor,\n 3045     * this can be enabled by calling {@link ui.router.state.$uiViewScrollProvider#methods_useAnchorScroll `$uiViewScrollProvider.useAnchorScroll()`}.\n 3046     */\n 3047:   this.$get = ['$anchorScroll', '$timeout', function ($anchorScroll, $timeout) {\n 3048      if (useAnchorScroll) {\n 3049:       return $anchorScroll;\n 3050      }\n 3051  \n ....\n 3080   *\n 3081   * @param {string=} autoscroll It allows you to set the scroll behavior of the browser window\n 3082:  * when a view is populated. By default, $anchorScroll is overridden by ui-router's custom scroll\n 3083   * service, {@link ui.router.state.$uiViewScroll}. This custom service let's you\n 3084   * scroll ui-view elements into view when they are populated during a state activation.\n 3085   *\n 3086:  * *Note: To revert back to old [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)\n 3087   * functionality, call `$uiViewScrollProvider.useAnchorScroll()`.*\n 3088   *\n\n18 matches across 5 files\n",
-			"settings":
-			{
-				"buffer_size": 2818,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "public/js/qjarvis.ctrls.js",
-			"settings":
-			{
-				"buffer_size": 2137,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/main.js",
-			"settings":
-			{
-				"buffer_size": 2185,
-				"line_ending": "Unix"
+				"buffer_size": 12339,
+				"line_ending": "CR"
 			}
 		}
 	],
@@ -157,33 +147,38 @@
 		"/home/javi/git/color-botanico/public",
 		"/home/javi/git/color-botanico/public/css",
 		"/home/javi/git/color-botanico/public/js",
-		"/home/javi/git/color-botanico/public/views"
+		"/home/javi/git/color-botanico/public/views",
+		"/home/javi/git/color-botanico/public/views/partials"
 	],
 	"file_history":
 	[
 		"/home/javi/git/color-botanico/public/css/cbotanico.css",
-		"/home/javi/git/color-botanico/public/views/partial.header.html",
+		"/home/javi/git/color-botanico/public/views/gallery.html",
+		"/home/javi/git/color-botanico/public/views/services.html",
 		"/home/javi/git/color-botanico/public/views/home.html",
+		"/home/javi/git/color-botanico/public/views/partial.header.html",
+		"/home/javi/git/color-botanico/public/views/apartamentsC.html",
+		"/home/javi/git/color-botanico/public/index.html",
+		"/home/javi/Downloads/startbootstrap-thumbnail-gallery-gh-pages/index.html",
+		"/home/javi/git/color-botanico/public/js/qjarvis.ctrls.js",
+		"/home/javi/git/color-botanico/public/views/partials/form.dtpTo.html",
+		"/home/javi/git/color-botanico/public/views/partials/form.dtpFrom.html",
+		"/home/javi/git/color-botanico/public/views/contact.html",
+		"/home/javi/git/color-botanico/public/js/colorBotanicoCtrls.js",
+		"/home/javi/git/color-botanico/public/js/colorBotanicoRoutes.js",
+		"/home/javi/git/color-botanico/public/views/partial.selectCountry.html",
+		"/home/javi/git/color-botanico/public/js/main.js",
 		"/home/javi/git/color-botanico/public/js/qjarvis.routes.js",
 		"/home/javi/git/color-botanico/public/js/qjarvis.config.js",
-		"/home/javi/git/color-botanico/public/js/main.js",
 		"/home/javi/git/color-botanico/public/js/qjarvis.api.js",
 		"/home/javi/git/color-botanico/public/js/qjarvis.lang.js",
-		"/home/javi/git/color-botanico/public/views/partial.selectCountry.html",
-		"/home/javi/git/color-botanico/public/js/qjarvis.ctrls.js",
 		"/home/javi/git/color-botanico/public/js/myRoutes.js",
 		"/home/javi/git/color-botanico/public/js/vendor/bootstrap-datetimepicker.min.js",
 		"/home/javi/git/color-botanico/public/css/selectize.bootstrap3.css",
-		"/home/javi/git/color-botanico/public/index.html",
 		"/home/javi/git/color-botanico/public/js/vendor/selectize.min.js",
 		"/home/javi/git/color-botanico/public/views/location.html",
-		"/home/javi/git/color-botanico/public/views/services.html",
-		"/home/javi/git/color-botanico/public/js/colorBotanicoRoutes.js",
-		"/home/javi/git/color-botanico/public/js/colorBotanicoCtrls.js",
-		"/home/javi/git/color-botanico/public/views/contact.html",
 		"/home/javi/git/color-botanico/public/views/apartamentsA.html",
 		"/home/javi/git/color-botanico/public/views/apartamentsB.html",
-		"/home/javi/git/color-botanico/public/views/apartamentsC.html",
 		"/home/javi/git/color-botanico/public/css/qjarvis.common.css",
 		"/home/javi/git/color-botanico/color-botanico.sublime-project",
 		"/home/javi/git/color-botanico/public/views/apartaments.html",
@@ -201,7 +196,6 @@
 		"/home/javi/git/color-botanico/public/views/content.notfound.html",
 		"/home/javi/git/node-webkit-boilerplate/gulpfile.js",
 		"/home/javi/git/slider/demo/index.html",
-		"/home/javi/git/color-botanico/public/views/gallery.html",
 		"/home/javi/git/slider/demo/demo.css",
 		"/home/javi/git/flambe/flambe.yaml",
 		"/home/javi/git/mpanda/src/spartan/db.js",
@@ -279,6 +273,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"separat",
+			"768",
+			"meida",
+			"1024",
+			"body",
+			"country",
+			"thumb",
 			"anchorScroll",
 			"slide-text-container",
 			"apartACarousel",
@@ -354,63 +355,62 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/index.html",
+					"file": "public/views/apartamentsA.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6657,
+						"buffer_size": 8339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4930,
-								4930
+								2238,
+								2238
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1962.0,
+						"translation.y": 657.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "public/js/colorBotanicoRoutes.js",
+					"file": "public/views/apartamentsB.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2038,
+						"buffer_size": 8351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1340,
-								1340
+								3998,
+								3998
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 627.0,
+						"translation.y": 1002.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -418,19 +418,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "public/views/contact.html",
+					"file": "public/views/apartamentsC.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2350,
+						"buffer_size": 6378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1151,
-								1151
+								4702,
+								4702
 							]
 						],
 						"settings":
@@ -439,208 +439,37 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 536.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/js/colorBotanicoCtrls.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1195,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								273,
-								273
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2818,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										177,
-										189
-									],
-									[
-										279,
-										291
-									],
-									[
-										381,
-										393
-									],
-									[
-										572,
-										584
-									],
-									[
-										786,
-										798
-									],
-									[
-										826,
-										838
-									],
-									[
-										1097,
-										1109
-									],
-									[
-										1136,
-										1148
-									],
-									[
-										1399,
-										1411
-									],
-									[
-										1448,
-										1460
-									],
-									[
-										1623,
-										1635
-									],
-									[
-										1792,
-										1804
-									],
-									[
-										2033,
-										2045
-									],
-									[
-										2071,
-										2083
-									],
-									[
-										2152,
-										2164
-									],
-									[
-										2353,
-										2365
-									],
-									[
-										2644,
-										2656
-									],
-									[
-										2693,
-										2705
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "public/js/qjarvis.ctrls.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2137,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1919,
-								1919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1111.0,
+						"translation.y": 1362.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "public/js/main.js",
+					"buffer": 3,
+					"file": "public/css/cbotanico.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2185,
+						"buffer_size": 12339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1378,
-								1382
+								4174,
+								4174
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1197.0,
+						"translation.y": 2778.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -651,7 +480,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -687,7 +516,7 @@
 	"project": "color-botanico.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -68,7 +68,14 @@ app.controller("contactCtrl", function(
 		});
 	}
 
+	$scope.initDtp = function(name) {
+		$rootScope.initDtpBase(name, $scope.form);
+	};
+
+
 	$timeout(function() {
+
+		/*
 		$('#dtpFrom').datetimepicker();
 		$('#dtpFrom').on('dp.change', function(e) {
 			$scope.form.fechaDesde = e.date._d;
@@ -77,7 +84,7 @@ app.controller("contactCtrl", function(
 		$('#dtpTo').datetimepicker();
 		$('#dtpTo').on('dp.change', function(e) {
 			$scope.form.fechaHasta = e.date._d;
-		});
+		});*/
 
 		$('#apartamentType').selectize();
 		$('#apartamentType').on('change', function(v) {

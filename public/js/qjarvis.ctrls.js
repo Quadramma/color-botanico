@@ -55,6 +55,15 @@ app.controller("appCtrl", function(
 		});
 	};
 
+	$rootScope.initDtpBase = function(name, $s) {
+		$timeout(function() {
+			$('#' + name).datetimepicker();
+			$('#' + name).on('dp.change', function(e) {
+				$s[name] = e.date._d;
+			});
+		});
+	};
+
 	//smooth scrolling to anchor. (uses location.hash)
 	app.anchorScroll = function() {
 		//$anchorScroll();
@@ -77,7 +86,19 @@ app.controller("appCtrl", function(
 	$scope.go = function(where) {
 		//console.info('go :' + where);
 		$state.go(where, {});
+		$timeout(function() {
+			$('.navbar-collapse').collapse('hide');
+			console.log('navbar hidding');
+		});
 	};
+
+	$rootScope.toggleNavBarCollapse = function() {
+		$timeout(function() {
+			$('.navbar-collapse').collapse('toggle');
+			console.log('navbar toggle');
+		});
+	}
+
 	$scope.isState = function(state) {
 		var rta = $state.current.name == state;
 		//console.log('state ' + state + ' > ' + rta);

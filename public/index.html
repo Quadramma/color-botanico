@@ -9,7 +9,7 @@
     <title>Color Botanico</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <meta name="google-translate-customization" content="5e433a74f62dab26-6e04de80c54913b1-g8055bc35ccba0b7e-26"></meta>
+    <meta name="google-translate-customization" content="478f0d2c3a318ac6-24e67afe5ef894c6-g91070d146239c969-11"></meta>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- Latest compiled and minified CSS -->
@@ -19,6 +19,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/cbotanico.css">
+        <link rel="stylesheet" href="css/thumbnail-gallery.css">
         <link rel="stylesheet" href="css/qjarvis.common.css">
         
         <!--
@@ -123,18 +124,13 @@
         return g['googleTranslateElementInitREADY'];
         }
         function googleTranslateElementInit($timeout) {
-        if(!isGoogleTranslateElementInitREADY()){
-        $timeout(function(){
-        googleTranslateElementInit();
-        },1000);
-        return;
-        }
-        new google.translate.TranslateElement({
-        pageLanguage: 'es',
-        includedLanguages: 'en',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false
-        }, 'google_translate_element');
+            if(!isGoogleTranslateElementInitREADY()){
+                $timeout(function(){
+                googleTranslateElementInit();
+                },1000);
+                return;
+            }
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
         }
         function googleTranslateElementInitREADY(){
         if(!g){
@@ -144,7 +140,9 @@
         }
         g = {};
         </script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInitREADY"></script>
+        
+
+        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInitREADY"></script>
         
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
