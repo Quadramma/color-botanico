@@ -11,13 +11,19 @@
 					<div class="col-xs-10 col-sm-8 col-md-4">
 						<div class="thumbnail form-container">
 							<div class="page-header center-block">
-								<h1>Buenos Aires te esta esperando</h1>
+								<h1>
+								<t ng-show='lang.spa'>Buenos Aires te esta esperando</t>
+								<t ng-show='lang.eng'>Buenos Aires is waiting for you</t>
+								</h1>
 							</div>
 							
 							<form>
 								
 								<div class="form-group required">
-									<label for="fullname">Nombre y Apellido</label>
+									<label for="fullname">
+										<t ng-show='lang.spa'>Nombre y Apellido</t>
+										<t ng-show='lang.eng'>Name and Last name</t>
+									</label>
 									<input ng-model="form.nombreyapellido" type="text" class="form-control" id="fullname" placeholder="Nombre y apellido">
 								</div>
 								<div class="form-group required">
@@ -25,12 +31,18 @@
 									<input ng-model="form.email" type="email" class="form-control" id="email" placeholder="E-mail">
 								</div>
 								<div class="form-group required">
-									<label for="phone">Telefono</label>
-									<input ng-model="form.telefono" type="number" class="form-control" id="phone" placeholder="Telefono">
+									<label for="phone">
+										<t ng-show='lang.spa'>Telefono</t>
+										<t ng-show='lang.eng'>Phone</t>
+									</label>
+									<input ng-model="form.telefono" type="number" class="form-control" id="phone" placeholder="">
 								</div>
 								
 								<div class="form-group">
-									<label for="select-country">País:</label>
+									<label for="select-country">
+										<t ng-show='lang.spa'>País:</t>
+										<t ng-show='lang.eng'>Country:</t>
+									</label>
 									<div
 										ng-include
 										src="'views/partial.selectCountry.html'"
@@ -51,9 +63,15 @@
 								
 								
 								<div class="form-group">
-									<label for="apartamentType">Tipo de apartamento:</label>
-									<select ng-model="tipoApartamento" id="apartamentType" class="demo-default" placeholder="Seleccione un tipo...">
-										<option value="">Seleccione un tipo...</option>
+									<label for="apartamentType">
+										<t ng-show='lang.spa'>Tipo de apartamento:</t>
+										<t ng-show='lang.eng'>Type of apartment:</t>
+									</label>
+									<select ng-model="tipoApartamento" id="apartamentType" class="demo-default" placeholder="">
+										<option value="">
+											<t ng-show='lang.spa'>Seleccione un tipo...</t>
+											<t ng-show='lang.eng'>Select...</t>
+										</option>
 										<option value="A">A</option>
 										<option value="B">B</option>
 										<option value="C">C</option>
@@ -61,7 +79,11 @@
 								</div>
 								
 								<div class="form-group required">
-									<label for="comment">Comentario adicional</label>
+									<label for="comment">
+										<t ng-show='lang.spa'>Comentario adicional</t>
+										<t ng-show='lang.eng'>Additional comment</t>
+										
+									</label>
 								</div>
 								<div class="form-group required">
 									
@@ -70,7 +92,11 @@
 									</textarea>
 								</div>
 								
-								<button ng-click="send()" class="btn btn-primary">Enviar</button>
+								<button ng-click="send()" class="btn btn-primary">
+								<t ng-show='lang.spa'>Enviar</t>
+								<t ng-show='lang.eng'>Send</t>
+								
+								</button>
 							</form>
 						</div>
 					</div>

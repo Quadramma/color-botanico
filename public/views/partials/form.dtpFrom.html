@@ -1,12 +1,15 @@
 <!--
 <div class="container">
-	<div class="row">
-	-->
-
+			<div class="row">
+		-->
 		<div class=''>
 			<div class="thumbnail center-block">
 				<div class="form-group center-block">
-					<label for="dtpFrom">Fecha de llegada</label>
+					<label for="dtpFrom">
+						<t ng-show='lang.spa'>Fecha de llegada</t>
+						<t ng-show='lang.eng'>Arrival date</t>
+						
+					</label>
 					<div class='input-group date' id='dtpFrom'>
 						<input ng-model="form.dtpFrom" type='text' class="form-control" />
 						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
@@ -15,7 +18,7 @@
 				</div>
 			</div>
 		</div>
-	<!--
-</div>
+		<!--
+	</div>
 </div>
 -->

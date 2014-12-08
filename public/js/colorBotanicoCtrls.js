@@ -1,4 +1,76 @@
-var app = angular.module("colorBotanicoCtrls", []);
+var app = angular.module("colorBotanicoCtrls", [])
+
+
+.run(function($rootScope) {
+
+
+	$rootScope.lang = store.get('CBOTANICO_LANG') || {
+		spa: true,
+		eng: false
+	};
+	$rootScope.setLang = function(name) {
+		for (var x in $rootScope.lang) {
+			if (x == name) {
+				$rootScope.lang[x] = true;
+			} else {
+				$rootScope.lang[x] = false;
+			}
+		}
+		store.set('CBOTANICO_LANG', $rootScope.lang);
+	};
+	$rootScope.isLangActive = function(name) {
+		for (var x in $rootScope.lang) {
+			if (x == name) {
+				return $rootScope.lang[name] == true;
+			}
+		}
+	};
+
+
+	$rootScope
+		.$on('$stateChangeStart',
+			function(event, toState, toParams, fromState, fromParams) {
+				//console.log("State Change: transition begins!");
+			});
+
+	$rootScope
+		.$on('$stateChangeSuccess',
+			function(event, toState, toParams, fromState, fromParams) {
+				//console.log("State Change: State change success!");
+				//console.info(toState);
+				if (toState.name == 'location') {
+					$rootScope.tripadvisor = true;
+				} else {
+					$rootScope.tripadvisor = false;
+				}
+			});
+	/*
+		$rootScope
+			.$on('$stateChangeError',
+				function(event, toState, toParams, fromState, fromParams) {
+					console.log("State Change: Error!");
+				});
+
+		$rootScope
+			.$on('$stateNotFound',
+				function(event, toState, toParams, fromState, fromParams) {
+					console.log("State Change: State not found!");
+				});
+
+		$rootScope
+			.$on('$viewContentLoading',
+				function(event, viewConfig) {
+					console.log("View Load: the view is loaded, and DOM rendered!");
+				});
+
+		$rootScope
+			.$on('$viewcontentLoaded',
+				function(event, viewConfig) {
+					console.log("View Load: the view is loaded, and DOM rendered!");
+				});
+			*/
+
+})
 
 
 app.controller("apartamentsCtrl", function(
