@@ -29,7 +29,7 @@ app.controller("mainCtrl", function(
 	$rootScope.nextApartamentSection = function() {
 		var name = $state.current.name;
 		var next = null;
-		if (name == '/apartaments') {
+		if (name == 'apartaments') {
 			next = '/apartamentsA';
 		} else {
 			if (name == '/apartamentsA') {
@@ -46,7 +46,7 @@ app.controller("mainCtrl", function(
 		}
 
 		if (next == null) {
-			console.warn('Current section should be /apartaments /apartamentsA,B or C');
+			console.warn('Current section should be /apartaments /apartamentsA,B or C (current name is '+name+')');
 			return;
 		}
 		$timeout(function() {
