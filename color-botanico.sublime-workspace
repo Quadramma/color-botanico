@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"pad",
-				"padding-right"
+				"tex",
+				"text-decoration"
 			],
 			[
-				"tex",
-				"text-align"
+				"pad",
+				"padding-right"
 			],
 			[
 				"fun",
@@ -83,38 +83,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "public/views/apartamentsA.html",
-			"settings":
-			{
-				"buffer_size": 8339,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/views/apartamentsB.html",
-			"settings":
-			{
-				"buffer_size": 8351,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/views/apartamentsC.html",
-			"settings":
-			{
-				"buffer_size": 6378,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/css/cbotanico.css",
-			"settings":
-			{
-				"buffer_size": 12339,
-				"line_ending": "CR"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -143,7 +111,6 @@
 	},
 	"expanded_folders":
 	[
-		"/home/javi/git/color-botanico",
 		"/home/javi/git/color-botanico/public",
 		"/home/javi/git/color-botanico/public/css",
 		"/home/javi/git/color-botanico/public/js",
@@ -152,21 +119,25 @@
 	],
 	"file_history":
 	[
-		"/home/javi/git/color-botanico/public/css/cbotanico.css",
-		"/home/javi/git/color-botanico/public/views/gallery.html",
 		"/home/javi/git/color-botanico/public/views/services.html",
-		"/home/javi/git/color-botanico/public/views/home.html",
-		"/home/javi/git/color-botanico/public/views/partial.header.html",
+		"/home/javi/git/color-botanico/public/views/partials/form.dtpFrom.html",
+		"/home/javi/git/color-botanico/public/views/partials/form.dtpTo.html",
+		"/home/javi/git/color-botanico/public/views/contact.html",
+		"/home/javi/git/color-botanico/public/views/partial.selectCountry.html",
+		"/home/javi/git/color-botanico/public/views/apartamentsA.html",
+		"/home/javi/git/color-botanico/public/views/apartamentsB.html",
 		"/home/javi/git/color-botanico/public/views/apartamentsC.html",
+		"/home/javi/git/color-botanico/public/views/partial.header.html",
 		"/home/javi/git/color-botanico/public/index.html",
+		"/home/javi/git/color-botanico/public/js/colorBotanicoCtrls.js",
+		"/home/javi/git/color-botanico/public/css/cbotanico.css",
+		"/home/javi/git/color-botanico/public/views/apartaments.html",
+		"/home/javi/git/color-botanico/public/views/gallery.html",
+		"/home/javi/git/color-botanico/public/views/location.html",
+		"/home/javi/git/color-botanico/public/views/home.html",
 		"/home/javi/Downloads/startbootstrap-thumbnail-gallery-gh-pages/index.html",
 		"/home/javi/git/color-botanico/public/js/qjarvis.ctrls.js",
-		"/home/javi/git/color-botanico/public/views/partials/form.dtpTo.html",
-		"/home/javi/git/color-botanico/public/views/partials/form.dtpFrom.html",
-		"/home/javi/git/color-botanico/public/views/contact.html",
-		"/home/javi/git/color-botanico/public/js/colorBotanicoCtrls.js",
 		"/home/javi/git/color-botanico/public/js/colorBotanicoRoutes.js",
-		"/home/javi/git/color-botanico/public/views/partial.selectCountry.html",
 		"/home/javi/git/color-botanico/public/js/main.js",
 		"/home/javi/git/color-botanico/public/js/qjarvis.routes.js",
 		"/home/javi/git/color-botanico/public/js/qjarvis.config.js",
@@ -176,12 +147,8 @@
 		"/home/javi/git/color-botanico/public/js/vendor/bootstrap-datetimepicker.min.js",
 		"/home/javi/git/color-botanico/public/css/selectize.bootstrap3.css",
 		"/home/javi/git/color-botanico/public/js/vendor/selectize.min.js",
-		"/home/javi/git/color-botanico/public/views/location.html",
-		"/home/javi/git/color-botanico/public/views/apartamentsA.html",
-		"/home/javi/git/color-botanico/public/views/apartamentsB.html",
 		"/home/javi/git/color-botanico/public/css/qjarvis.common.css",
 		"/home/javi/git/color-botanico/color-botanico.sublime-project",
-		"/home/javi/git/color-botanico/public/views/apartaments.html",
 		"/home/javi/git/color-botanico/public/views/home2.html",
 		"/home/javi/git/color-botanico/public/js/snippets.js",
 		"/home/javi/git/color-botanico/public/js/myApiServ.js",
@@ -263,6 +230,7 @@
 		"height": 105.0,
 		"where_history":
 		[
+			"*.html",
 			"*.js",
 			"*.html",
 			""
@@ -270,9 +238,11 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"EQUIPtMENT",
+			"link",
 			"separat",
 			"768",
 			"meida",
@@ -355,126 +325,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "public/views/apartamentsA.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8339,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2238,
-								2238
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 657.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "public/views/apartamentsB.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8351,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3998,
-								3998
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1002.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/views/apartamentsC.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6378,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4702,
-								4702
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1362.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/css/cbotanico.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12339,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4174,
-								4174
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2778.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -546,7 +398,7 @@
 		[
 			[
 				"",
-				"~/git/wineyardapp/wine.sublime-project"
+				"~/git/html5backend/html5backend.sublime-project"
 			]
 		],
 		"width": 380.0
