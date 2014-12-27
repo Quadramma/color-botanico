@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/cbotanico.css">
+        
         <link rel="stylesheet" href="css/thumbnail-gallery.css">
+        <link rel="stylesheet" href="css/datepicker3.css">
         <link rel="stylesheet" href="css/qjarvis.common.css">
+        <link rel="stylesheet" href="css/cbotanico.css">
+        
         
         <!--
         <link rel="stylesheet" href="css/slider.min.css?=2">
         -->
         <link rel="stylesheet" href="css/selectize.bootstrap3.css">
         
-
-
-
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         
     </head>
@@ -77,9 +77,6 @@
             </div>
         </div>
         
-
-
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -89,15 +86,14 @@
         <script src="js/vendor/angular-ui-router.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         
-
         <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment-with-locales.js"></script>
+        
         <script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/vendor/bootstrap-datepicker.js"></script>
+        
         <script src="js/vendor/selectize.min.js"></script>
-
         <script src="js/vendor/store.min.js"></script>
         
-
-
         
         <script src="js/vendor/FileSaver.min.js"></script>
         <script src="js/main.js"></script>
@@ -112,7 +108,6 @@
         <script src="js/qjarvis.ctrls.js"></script>
         <script src="js/qjarvis.routes.js"></script>
         
-
         
         
         
@@ -126,13 +121,13 @@
         return g['googleTranslateElementInitREADY'];
         }
         function googleTranslateElementInit($timeout) {
-            if(!isGoogleTranslateElementInitREADY()){
-                $timeout(function(){
-                googleTranslateElementInit();
-                },1000);
-                return;
-            }
-            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        if(!isGoogleTranslateElementInitREADY()){
+        $timeout(function(){
+        googleTranslateElementInit();
+        },1000);
+        return;
+        }
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
         }
         function googleTranslateElementInitREADY(){
         if(!g){
@@ -143,7 +138,6 @@
         g = {};
         </script>
         
-
         <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInitREADY"></script>
         
         

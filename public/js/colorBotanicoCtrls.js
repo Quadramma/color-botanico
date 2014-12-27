@@ -17,6 +17,9 @@ var app = angular.module("colorBotanicoCtrls", [])
 			}
 		}
 		store.set('CBOTANICO_LANG', $rootScope.lang);
+		$rootScope.$emit('setLang', {
+			name: name
+		});
 	};
 	$rootScope.isLangActive = function(name) {
 		for (var x in $rootScope.lang) {
@@ -124,10 +127,69 @@ app.controller("contactCtrl", function(
 	, focus, select, $timeout) {
 	console.info("contactCtrl");
 
-	$scope.form = {};
+	$scope.form = {
+		nombreyapellido: '',
+		tipoApartamento: '',
+		email: '',
+		telefono: '',
+		pais: '',
+		dtpFrom: '',
+		dtpTo: '',
+		comentario: '',
+	};
 
 	$scope.send = function() {
 		console.info($scope.form);
+
+		//validations
+		var successValidation = true;
+		var field = '';
+
+		field = 'nombreyapellido';
+		if (!$scope.form[field] || $scope.form[field] == null || $scope.form[field] == "" || $scope.form[field].length == 0) {
+			focus("form #fullname");
+			successValidation = false;
+		}
+		field = 'email';
+		if (!$scope.form[field] || $scope.form[field] == null || $scope.form[field] == "" || $scope.form[field].length == 0) {
+			focus("form #email");
+			successValidation = false;
+		}
+		field = 'telefono';
+		if (!$scope.form[field] || $scope.form[field] == null || $scope.form[field] == "" || $scope.form[field].length == 0) {
+			focus("form #phone");
+			successValidation = false;
+		}
+		field = 'dtpFrom';
+		if (!$scope.form[field] || $scope.form[field] == null || $scope.form[field] == "" || $scope.form[field].length == 0) {
+			focus("form #dtpFrom");
+			successValidation = false;
+		}
+		field = 'dtpTo';
+		if (!$scope.form[field] || $scope.form[field] == null || $scope.form[field] == "" || $scope.form[field].length == 0) {
+			focus("form #dtpTo");
+			successValidation = false;
+		}
+		if (!successValidation) {
+			return;
+		}
+
+
+		$.post("email/index.php", $scope.form)
+			.done(function(data) {
+				console.info(data);
+
+
+				$scope.showPopUp(data);
+
+
+			})
+			.fail(function() {
+				$scope.showPopUp('Server error');
+			})
+			.always(function() {
+
+			});
 	};
 
 	$scope.initCountrySelect = function() {
@@ -140,8 +202,34 @@ app.controller("contactCtrl", function(
 		});
 	}
 
+
+
 	$scope.initDtp = function(name) {
-		$rootScope.initDtpBase(name, $scope.form);
+		//$rootScope.initDtpBase(name, $scope.form);
+
+		$timeout(function() {
+			var options = {
+				autoclose: true,
+				todayHighlight: true,
+				language: 'en'
+			};
+			if ($rootScope.isLangActive('spa')) {
+				options['language'] = "es";
+			}
+			//console.info('init dtp para ' + name + ' with options ' + JSON.stringify(options));
+			$('#' + name).datepicker(options);
+			$('#' + name).on('changeDate', function(e) {
+				//console.info('changeDate');
+				//console.info(e);
+				$scope.form[name] = e.date;
+			});
+		});
+
+		//
+		$rootScope.$on('setLang', function(p, p2) {
+			$scope.initDtp(name);
+		});
+
 	};
 
 
@@ -163,9 +251,47 @@ app.controller("contactCtrl", function(
 			$scope.form.tipoApartamento = $("#apartamentType").next().find(".item").html();
 		});
 
-
-
 	});
+
+	function autoCloseMessage() {
+		$timeout(function() {
+			/*
+			$('.alert-autocloseable-success').hide();
+			$('.alert-autocloseable-warning').hide();
+			$('.alert-autocloseable-danger').hide();
+			$('.alert-autocloseable-info').hide();
+	*/
+
+			$scope.showPopUp = function(result) {
+
+				var selector = ''
+				if (result == '1') {
+					selector = '.alert-cbotanico-success';
+				} else {
+					selector = '.alert-cbotanico-fail';
+				}
+
+				//$('#autoclosable-btn-info').prop("disabled", true);
+				//$('.alert-autocloseable-info p').html(txt);
+				$(selector).show();
+				$(selector).delay(6000).fadeOut("slow", function() {
+					// Animation complete.
+					//$('#autoclosable-btn-info').prop("disabled", false);
+				});
+
+			};
+
+		});
+
+	}
+	autoCloseMessage();
+
+	/*
+		$timeout(function() {
+			$scope.showPopUp('Esto es una prueba');
+		}, 3000);
+	*/
+
 });
 
 

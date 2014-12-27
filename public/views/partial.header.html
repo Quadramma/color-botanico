@@ -17,7 +17,7 @@
 						<div class="header-logo" ng-click="go('home')">
 							<!-- <img id="sample" src="img/logoFull.png" /> -->
 							<img class="hidden-xs"  src="img/logo.png"/>
-							<p 	>COLOR BOTANICO</p>
+							<p 	>COLOR BOTÁNICO</p>
 						</div>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,7 +44,7 @@
 								<a
 									ng-class="{'active': isState('gallery')}"
 									ng-click="go('gallery')">
-									<t ng-show='lang.spa'>GALERIA</t>
+									<t ng-show='lang.spa'>GALERÍA</t>
 									<t ng-show='lang.eng'>GALLERY</t>
 								</a>
 							</li>
@@ -52,7 +52,7 @@
 								<a
 									ng-class="{'active': isState('location')}"
 									ng-click="go('location')">
-									<t ng-show='lang.spa'>UBICACION</t>
+									<t ng-show='lang.spa'>UBICACIÓN</t>
 									<t ng-show='lang.eng'>LOCATION</t>
 								</a>
 							</li>
@@ -86,7 +86,8 @@
 								<a ng-class="{clickable:true,active:isLangActive('eng')}" ng-click="setLang('eng')">ENGLISH</a>
 								</p>
 							</li>
-							<li ng-show="tripadvisor">
+<!-- ng-show="tripadvisor" -->
+							<li >
 								<div class="tripadvisor">
 									<a target="_blank" href="http://www.tripadvisor.com.ar/Hotel_Review-g312741-d2337520-Reviews-Color_Botanico-Buenos_Aires_Capital_Federal_District.html"><img src="img/tripadvisor.jpg"/></a>
 								</div>

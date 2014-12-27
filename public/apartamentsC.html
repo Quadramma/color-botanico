@@ -1,0 +1,188 @@
+<div class="apartaments apart-detail">
+	<div class="container">
+		
+		<div class="row">
+			<div class=" col-md-6">
+				<div class="separator-apartament-detail-top"></div>
+				<div class="detail center-block">
+					<h2>
+					<t ng-show='lang.spa'>APARTAMENTOS</t>
+					<t ng-show='lang.eng'>APARTMENTS</t>
+					<b>C</b></h2>
+					<h5>
+					<t ng-show='lang.spa'>CARACTERISTICAS</t>
+					<t ng-show='lang.eng'>FEATURES</t>
+					</h5>
+					<p>
+					<t ng-show='lang.spa'>Apartamentos de 45 m2 equipados para hasta 3<br> personas.</t>
+					<t ng-show='lang.eng'>45 m2 apartments equipped for up to three.</t>
+					<br>
+					<br>
+					
+					
+					<t ng-show='lang.spa'>Cama twin de 1,8 x 2, sofa cama, baño<br> completo
+					con hidromasaje.</t>
+					<t ng-show='lang.eng'>1,8x 2 twin bed, sofabed,full <br> bathroom with hydro massage. </t>
+					<p>
+					<h5>
+					<t ng-show='lang.spa'>EQUIPAMIENTO</t>
+					<t ng-show='lang.eng'>EQUIPMENT</t>
+					</h5>
+					<p>
+					<t ng-show='lang.spa'>Cocina completamente equipada; vajilla, utensillos de<br> cocina, microondas, anafe electrico, heladera.</t>
+					<t ng-show='lang.eng'>Fully equipped kitchen; dishwares, microwaves, electric stove and fridge.</t>
+					<br>
+					<br>
+					
+					<t ng-show='lang.spa'>Aire acondicionado frio/calor con regulacion individual <br> y caja
+de seguridad.</t>
+					<t ng-show='lang.eng'>Airconditioning.</t>
+					<p>
+					<h5>
+					<t ng-show='lang.spa'>DETALLES ADICIONALES</t>
+					<t ng-show='lang.eng'>ADITIONAL DETAILS</t>
+					</h5>
+					<p>
+					<t ng-show='lang.spa'>Caja de seguridad, balcon.</t>
+					<t ng-show='lang.eng'>Safety box, balcony.</t>
+					<p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="separator-apartament-detail-top"></div>
+				<!-- Carousel
+				================================================== -->
+				<div id="apartCCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#apartCCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#apartCCarousel" data-slide-to="1"></li>
+						<li data-target="#apartCCarousel" data-slide-to="2"></li>
+						<li data-target="#apartCCarousel" data-slide-to="3"></li>
+						<li data-target="#apartCCarousel" data-slide-to="4"></li>
+						<li data-target="#apartCCarousel" data-slide-to="5"></li>
+						<li data-target="#apartCCarousel" data-slide-to="6"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img ng-click="openModal('#cbig1')" class="clickable" src="img/c/big1.jpg" alt="First slide">
+							<div class="container">
+							</div>
+						</div>
+						<div class="item">
+							<img ng-click="openModal('#cbig2')" class="clickable" src="img/c/big2.jpg" alt="Second slide">
+							<div class="container">
+							</div>
+						</div>
+						<div class="item">
+							<img ng-click="openModal('#cbig3')" class="clickable" src="img/c/big3.jpg" alt="Third slide">
+							<div class="container">
+							</div>
+						</div>
+						<div class="item">
+							<img ng-click="openModal('#cbig4')" class="clickable" src="img/c/big4.jpg" alt="Third slide">
+							<div class="container">
+							</div>
+						</div>
+						<div class="item">
+							<img ng-click="openModal('#cbig5')" class="clickable" src="img/c/big5.jpg" alt="Third slide">
+							<div class="container">
+							</div>
+						</div>
+						<div class="item">
+							<img ng-click="openModal('#cbig6')" class="clickable" src="img/c/big6.jpg" alt="Third slide">
+							<div class="container">
+							</div>
+						</div>
+						<div class="item">
+							<img ng-click="openModal('#cbig7')" class="clickable" src="img/c/big7.jpg" alt="Third slide">
+							<div class="container">
+							</div>
+						</div>
+					</div>
+					
+					<a class="carousel-control left clickable" ng-click="carousel('#apartCCarousel','prev')" data-slide="prev"><i class="fa fa-angle-left fa-4 arrowSize"></i></a>
+					<a class="carousel-control right clickable" ng-click="carousel('#apartCCarousel','next')"><i class="fa fa-angle-right fa-4 arrowSize"></i></a>
+					
+				</div>
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-md-2 col-xs-6 ">
+							<a class="thumbnail">
+								<img class="clickable thumb img-responsive" src="img/c/thumb1.jpg" data-target="#apartCCarousel" data-slide-to="0" alt="">
+							</a>
+						</div>
+						<div class="col-md-2 col-xs-6 ">
+							<a class="thumbnail">
+								<img class="clickable thumb img-responsive" src="img/c/thumb2.jpg" data-target="#apartCCarousel" data-slide-to="1" alt="">
+							</a>
+						</div>
+						<div class="col-md-2 col-xs-6 ">
+							<a class="thumbnail">
+								<img class="clickable thumb firstrow lastitem img-responsive" src="img/c/thumb3.jpg" data-target="#apartCCarousel" data-slide-to="2" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-xs-6 ">
+							<a class="thumbnail">
+								<img class="clickable thumb last img-responsive" src="img/c/thumb4.jpg" data-target="#apartCCarousel" data-slide-to="3" alt="">
+							</a>
+						</div>
+						<div class="col-md-2 col-xs-6 ">
+							<a class="thumbnail">
+								<img class="clickable thumb last img-responsive" src="img/c/thumb5.jpg" data-target="#apartCCarousel" data-slide-to="4" alt="">
+							</a>
+						</div>
+						<div class="col-md-2 col-xs-6 ">
+							<a class="thumbnail">
+								<img class="clickable thumb last lastitem img-responsive" src="img/c/thumb6.jpg" data-target="#apartCCarousel" data-slide-to="5" alt="">
+							</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<div class="arrow-down center-block"
+					ng-click="nextApartamentSection()">
+					<img src="img/arrowDown.png" class="center-block" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="cbig1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				</div>
+				<img class="img-responsive center-block" src="img/c/big1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="cbig2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				</div>
+				<img class="img-responsive center-block" src="img/c/big2.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="cbig3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				</div>
+				<img class="img-responsive center-block" src="img/c/big3.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>

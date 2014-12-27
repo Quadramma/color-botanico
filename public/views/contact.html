@@ -12,7 +12,7 @@
 						<div class="thumbnail form-container">
 							<div class="page-header center-block">
 								<h1>
-								<t ng-show='lang.spa'>Buenos Aires<br>te esta esperando</t>
+								<t ng-show='lang.spa'>Buenos Aires<br>te está esperando</t>
 								<t ng-show='lang.eng'>Buenos Aires<br>is waiting for you</t>
 								</h1>
 							</div>
@@ -32,7 +32,7 @@
 								</div>
 								<div class="form-group required">
 									<label for="phone">
-										<t ng-show='lang.spa'>Telefono</t>
+										<t ng-show='lang.spa'>Teléfono</t>
 										<t ng-show='lang.eng'>Phone</t>
 									</label>
 									<input ng-model="form.telefono" type="number" class="form-control" id="phone" placeholder="">
@@ -67,7 +67,7 @@
 										<t ng-show='lang.spa'>Tipo de apartamento:</t>
 										<t ng-show='lang.eng'>Type of apartment:</t>
 									</label>
-									<select ng-model="tipoApartamento" id="apartamentType" class="demo-default" placeholder="">
+									<select ng-model="form.tipoApartamento" id="apartamentType" class="demo-default" placeholder="">
 										<option value="">
 											<t ng-show='lang.spa'>Seleccione un tipo...</t>
 											<t ng-show='lang.eng'>Select...</t>
@@ -98,6 +98,26 @@
 								
 								</button>
 							</form>
+							
+							<div class="outer">
+								<div class="middle">
+									<div class="inner">
+										<div class="alert-cbotanico-success alert alert-cbotanico alert-info alert-autocloseable-info">
+											<p>
+											<t ng-show='lang.spa'>Mensaje enviado.</t>
+											<t ng-show='lang.eng'>Message sended.</t>
+											</p>
+										</div>
+										<div class="alert-cbotanico-fail alert alert-cbotanico alert-info alert-autocloseable-info">
+											<p>
+											<t ng-show='lang.spa'>Hubo un problema con el servidor. Intente más tarde.</t>
+											<t ng-show='lang.eng'>Server error. Try later.</t>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 					<div class="col-xs-1 col-sm-2 hidden-md hidden-lg">

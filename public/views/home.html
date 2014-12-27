@@ -1,25 +1,27 @@
 <div class="home" >
 	
-	<section class="block" ng-click="go('apartaments')">
+	<section class="block" >
 		<div id="myCarousel" class="carousel slide">
 			<div class="carousel-inner" >
 				<div class="active item">
 					<div></div>
-					<t ng-show='lang.spa'><img src="img/home_slide_1.jpg" alt="Slide1" /></t>
-					<t ng-show='lang.eng'><img src="img/home_slide_1_eng.jpg" alt="Slide1" /></t>
-					
+					<t ng-show='lang.spa' ng-click="go('apartaments')"><img src="img/home_slide_1.jpg" /></t>
+					<t ng-show='lang.eng' ng-click="go('apartaments')"><img src="img/home_slide_1_eng.jpg"/></t>
 				</div>
 				<div class="item">
 					<div></div>
-					<img src="img/home_slide_2.jpg" alt="Slide1" />
+					<t ng-show='lang.spa' ng-click="go('apartaments')"><img src="img/home_slide_2.jpg" /></t>
+					<t ng-show='lang.eng' ng-click="go('apartaments')"><img src="img/home_slide_2.jpg" /></t>
 				</div>
 				<div class="item">
 					<div></div>
-					<img src="img/home_slide_student.jpg" alt="Slide1" />
+					<t ng-show='lang.spa' ng-click="go('apartaments')"><img src="img/home_slide_student.jpg" /></t>
+					<t ng-show='lang.eng' ng-click="go('apartaments')"><img src="img/home_slide_student.jpg" /></t>
 				</div>
 				<div class="item">
 					<div></div>
-					<img src="img/home_slide_corporate.jpg" alt="Slide1" />
+					<t ng-show='lang.spa' ng-click="go('apartaments')"><img src="img/home_slide_corporate.jpg" /></t>
+					<t ng-show='lang.eng' ng-click="go('apartaments')"><img src="img/home_slide_corporate.jpg" /></t>
 				</div>
 				<!--
 				<div class="active item">
@@ -88,7 +90,7 @@
 				<div class="thumbnail" ng-click="go('apartaments')">
 					<img src="img/icon_apartamentos.png" alt="...">
 					<div class="caption">
-						<h3>Aparamentos</h3>
+						<h3>Apartamentos</h3>
 					</div>
 				</div>
 			</div>
@@ -104,7 +106,7 @@
 				<div class="thumbnail" ng-click="go('location')">
 					<img src="img/icon_ubicacion.png" alt="...">
 					<div class="caption">
-						<h3>Ubicacion</h3>
+						<h3>Ubicación</h3>
 					</div>
 				</div>
 			</div>
