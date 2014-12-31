@@ -99,24 +99,38 @@
 								</button>
 							</form>
 							
-							<div class="outer">
-								<div class="middle">
-									<div class="inner">
-										<div class="alert-cbotanico-success alert alert-cbotanico alert-info alert-autocloseable-info">
-											<p>
-											<t ng-show='lang.spa'>Mensaje enviado.</t>
-											<t ng-show='lang.eng'>Message sended.</t>
-											</p>
-										</div>
-										<div class="alert-cbotanico-fail alert alert-cbotanico alert-info alert-autocloseable-info">
-											<p>
-											<t ng-show='lang.spa'>Hubo un problema con el servidor. Intente más tarde.</t>
-											<t ng-show='lang.eng'>Server error. Try later.</t>
-											</p>
-										</div>
-									</div>
-								</div>
+							<div style="display:none" class="alert-cbotanico-success">
+								<p>
+								<t ng-show='lang.spa'>Tu mensaje ha sido enviado, en breve te responderemos. ¡Gracias por tu consulta!</t>
+								<t ng-show='lang.eng'>Your message has been sent, we will respond shortly.Thank you for your inquiry!</t>
+								</p>
 							</div>
+							<div style="display:none" class="alert-cbotanico-fail">
+								<p>
+								<t ng-show='lang.spa'>Hubo un problema con el servidor. Intente más tarde.</t>
+								<t ng-show='lang.eng'>Server error. Try later.</t>
+								</p>
+							</div>
+							<!--
+							<div class="outer">
+										<div class="middle">
+													<div class="inner">
+																<div class="alert-cbotanico-success alert alert-cbotanico alert-info alert-autocloseable-info">
+																			<p>
+																			<t ng-show='lang.spa'>Tu mensaje ha sido enviado, en breve te responderemos. ¡Gracias por tu consulta!</t>
+																			<t ng-show='lang.eng'>Your message has been sent, we will respond shortly.Thank you for your inquiry!</t>
+																			</p>
+																</div>
+																<div class="alert-cbotanico-fail alert alert-cbotanico alert-info alert-autocloseable-info">
+																			<p>
+																			<t ng-show='lang.spa'>Hubo un problema con el servidor. Intente más tarde.</t>
+																			<t ng-show='lang.eng'>Server error. Try later.</t>
+																			</p>
+																</div>
+													</div>
+										</div>
+							</div>
+							-->
 							
 						</div>
 					</div>

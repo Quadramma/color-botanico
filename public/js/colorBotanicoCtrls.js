@@ -182,6 +182,8 @@ app.controller("contactCtrl", function(
 
 				$scope.showPopUp(data);
 
+				$scope.clearForm();
+
 
 			})
 			.fail(function() {
@@ -189,12 +191,37 @@ app.controller("contactCtrl", function(
 			})
 			.always(function() {
 
+
 			});
+		//$scope.showPopUp('');
 	};
+
+	scope = {};
+	scope = $scope;
+
+	$scope.clearForm = function() {
+		$timeout(function() {
+			//clear fields
+			for (var x in $scope.form) {
+				$scope.form[x] = '';
+			}
+			$('#dtpFrom').datepicker('update', '');
+			$('#dtpTo').datepicker('update', '');
+			for (var x in $scope.selectize) {
+				if ($scope.selectize[x] && $scope.selectize[x][0] && $scope.selectize[x][0].selectize &&
+					$scope.selectize[x][0].selectize.clear) {
+					$scope.selectize[x][0].selectize.clear();
+				}
+
+			}
+		});
+	};
+
+	$scope.selectize = [];
 
 	$scope.initCountrySelect = function() {
 		$timeout(function() {
-			$('#select-country').selectize();
+			$scope.selectize.push($('#select-country').selectize());
 			console.log('initCountrySelect!');
 		});
 		$('#select-country').on('change', function(v, d) {
@@ -246,7 +273,7 @@ app.controller("contactCtrl", function(
 			$scope.form.fechaHasta = e.date._d;
 		});*/
 
-		$('#apartamentType').selectize();
+		$scope.selectize.push($('#apartamentType').selectize());
 		$('#apartamentType').on('change', function(v) {
 			$scope.form.tipoApartamento = $("#apartamentType").next().find(".item").html();
 		});
@@ -267,18 +294,30 @@ app.controller("contactCtrl", function(
 				var selector = ''
 				if (result == '1') {
 					selector = '.alert-cbotanico-success';
+
+
+
 				} else {
 					selector = '.alert-cbotanico-fail';
 				}
 
-				//$('#autoclosable-btn-info').prop("disabled", true);
-				//$('.alert-autocloseable-info p').html(txt);
+
+				//new popup---------------------
+				$timeout(function() {
+					var msg = $(selector + ' p');
+					bootbox.alert(msg, function() {
+
+					});
+				});
+				return; //---------------------
+
+
+				/*
 				$(selector).show();
 				$(selector).delay(6000).fadeOut("slow", function() {
-					// Animation complete.
-					//$('#autoclosable-btn-info').prop("disabled", false);
+				
 				});
-
+*/
 			};
 
 		});

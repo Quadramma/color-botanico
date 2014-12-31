@@ -26,7 +26,8 @@ $EMAIL_REQUIRED         = "E-mail required";
 $MSG_TITLE              = $name .' utilizo el formulario de contacto.';
 $MSG_FROM               = 'info@colorbotanico.com';
 $MSG_FROM_NICK          = 'Color Botanico Mailing';
-$MSG_TO                 = 'damian@quadramma.com';                       //IMPORTANT
+//$MSG_TO                 = 'damian@quadramma.com';                       //IMPORTANT
+$MSG_TO                 = 'info@colorbotanico.com';                       //IMPORTANT
 
 $MSG = "\nNombre y Apellido: " . $name;
 $MSG = $MSG . "\nEmail: " .$email;
